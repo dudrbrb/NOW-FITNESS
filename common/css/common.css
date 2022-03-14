@@ -1,14 +1,22 @@
 /* import font */
 @font-face{ 
-    font-family:'KoPubDotum'; 
+    font-family:'KoPubDotumMedium'; 
     src:url('../font/KoPubDotumMedium.ttf') format('truetype')
+}
+@font-face{ 
+    font-family:'KoPubDotumLight'; 
+    src:url('../font/KoPubDotumLight.ttf') format('truetype')
+}
+@font-face{ 
+    font-family:'KoPubDotumBold'; 
+    src:url('../font/KoPubDotumBold.ttf') format('truetype')
 }
 
 /* common */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'KoPubDotum', 'sans-serif';
+    font-family: 'KoPubDotumLight', 'sans-serif';
     font-size: 15px;
     font-weight: 400;
     color: #282828;

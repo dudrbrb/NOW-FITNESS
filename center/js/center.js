@@ -21,20 +21,18 @@ var 지점명목록 = ['봉선점','2호점'];
 // 이미지 파일 목록
 이미지목록 = {
     봉선점 : [
-        'https://swiperjs.com/demos/images/nature-1.jpg',
-        'https://swiperjs.com/demos/images/nature-2.jpg',
-        'https://swiperjs.com/demos/images/nature-3.jpg',
-        'https://swiperjs.com/demos/images/nature-4.jpg',
-        'https://swiperjs.com/demos/images/nature-5.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
+        './img/bongseon/1.jpg',
+        './img/bongseon/2.jpg',
+        './img/bongseon/3.jpg',
+        './img/bongseon/4.jpg',
+        './img/bongseon/5.jpg',
+        './img/bongseon/6.jpg',
     ],
     오픈예정 :[
-        'https://swiperjs.com/demos/images/nature-6.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
-        'https://swiperjs.com/demos/images/nature-6.jpg',
+        './img/ready.jpg',
+        './img/ready.jpg',
+        './img/ready.jpg',
+        './img/ready.jpg'
     ],
     // 새 지점 추가 시 예시
     

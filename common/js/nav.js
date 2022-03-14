@@ -5,18 +5,21 @@ window.addEventListener('load', (e) => {
 function makeNav(){
     var navBar = document.querySelector('nav');
 
-    navBar.innerHTML = `<img src="../common/img/logo.png" alt="now fitness logo" class="logo">
+    navBar.innerHTML = `<a href="../main/" target="_self">
+                            <img src="../common/img/logo.png" alt="now fitness logo" class="logo">
+                        </a>
                         <ul class="menu">
-                            <li>지점안내</li>
-                            <li>강사소개</li>
-                            <li>프로그램
+                            <li><a href="../center/?봉선점" target="_self">지점안내</a></li>
+                            <li><a href="../trainer/" target="_self">강사소개</a></li>
+                            <li><a href="../program/" target="_self">프로그램</a>
                                 <ul>
-                                    <li>P.T</li>
-                                    <li>필라테스</li>
+                                    <li><a href="../program/?pt" target="_self">P.T</a></li>
+                                    <li><a href="../program/?pl" target="_self">필라테스</a></li>
                                 </ul>
                             </li>
-                            <li>오시는 길</li>
-                            <li>공지사항</li>
+                            <li><a href="../way-to-come/" target="_self">오시는 길</a></li>
+                            <li><a href="../notice/" target="_self">공지사항</a></li>
                             <li><a href="https://www.instagram.com/nowfitness_bongseon/" target="_blank">인스타그램</a></li>
                         </ul>`;
 }
+

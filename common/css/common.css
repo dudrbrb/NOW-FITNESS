@@ -21,7 +21,8 @@
     font-weight: 400;
     color: #282828;
     box-sizing: border-box;
-    transition: all 0.4s;
+    list-style: none;
+    text-decoration: none;
 }
 
 /* 상단 메뉴 */
@@ -45,7 +46,6 @@ nav ul li a{
     font-weight: 300;
     list-style: none;
     cursor: pointer;
-    text-decoration: none;
 }
 nav ul li:hover,
 nav ul li a:hover{
@@ -72,15 +72,22 @@ nav > ul > li:hover >ul{
     display: block;
 }
 
+/* 상세페이지 상단 */
 header{
     width: 100%;
-    height: 700px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 header h1{
     font-size: 45px;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
+    color: #fefefe;
+    letter-spacing: 0.2rem;
 }

@@ -2,7 +2,9 @@
 header{
     background-image: url('../img/bg.jpg');
 }
-
+main{
+    position: relative;
+}
 /* 지점선택 */
 .select-center {
     display: flex;
@@ -36,7 +38,7 @@ header{
     color: #fefefe;
 }
 
-/* 트레이너 이미지 */
+/* 트레이너 목록 */
 .trainer-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -99,4 +101,79 @@ header{
 .info button:hover{
     border: 1px solid #ffe400;
     color: #ffe400;
+}
+
+/* 팝업 -트레이너 정보 자세히보기 */
+.popup-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popup{
+    background-color: #fefefe;
+    padding: 30px 40px;
+    width: 94%;
+    max-width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.detail-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.detail-top .logo{
+    width: 100px;
+}
+.detail-top .close{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.detail-top .close img{
+    width: 20px;
+}
+.trainer-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-box, .txt-box{
+    width: 45%;
+}
+.img-box img{
+    width: 100%;
+}
+.txt-box{
+    margin-left: 40px;
+}
+.txt-box h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    border-bottom: 2px solid #ffd413;
+}
+.txt-box p{
+    margin: 20px 0;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.txt-box ul li{
+    font-size: 14px;
+    line-height: 20px;
+}
+.txt-box ul li::before{
+    content: '- ';
 }

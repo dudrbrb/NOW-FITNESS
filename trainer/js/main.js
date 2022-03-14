@@ -2,6 +2,9 @@ window.addEventListener('load', (e) => {
     makeCenterList();
     clickCenter();
     makeTrainer();
+
+    openPopup();
+    closePopup();
 });
 
 
@@ -41,7 +44,7 @@ function makeTrainer(){
                                 <img src="./img/ready.jpg" alt="준비중" />
                             </div>`;
     }else{
-        trainer.forEach( 트레이너 =>{
+        trainer.forEach( (트레이너, 순서) =>{
             wrapper.innerHTML += `<div class="trainer-box">
                                     <img src="${트레이너.이미지경로}" alt="트레이너 이미지" />
                                     <div class="info">
@@ -51,10 +54,42 @@ function makeTrainer(){
                                             ${트레이너.지점}<br>
                                             ${트레이너.직위}
                                         </p>
-                                        <button>자세히보기</button>
+                                        <button class="detail-btn" data-num="${순서}">자세히보기</button>
                                     </div>
                                 </div>`;
         });
     }
-    
+}
+
+function openPopup(){
+    var btns = document.querySelectorAll('.detail-btn');
+
+    [].forEach.call(btns, function(e){ 
+        e.addEventListener("click", function(){
+            var data = 트레이너[선택한지점명][e.getAttribute('data-num')]
+            var txtBox = document.querySelector('.txt-box');
+      
+            txtBox.innerHTML = `<h3>${data.이름}</h3>
+                                <p>나우휘트니스 ${data.지점} <br>
+                                ${data.직위}</p>
+                                <ul>
+                                </ul>`
+
+            popup('block')
+        }, false); 
+    });
+}
+function closePopup(){
+    var btns = document.querySelectorAll('.close');
+
+    [].forEach.call(btns, function(e){ 
+        e.addEventListener("click", function(){
+            popup('none')
+        }, false); 
+    });
+}
+
+function popup(popupState){
+    var popup = document.querySelector('.popup-wrapper');
+    popup.style.display = popupState;
 }

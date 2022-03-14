@@ -68,7 +68,9 @@ function openPopup(){
         e.addEventListener("click", function(){
             var data = 트레이너[선택한지점명][e.getAttribute('data-num')]
             var txtBox = document.querySelector('.txt-box');
-      
+            var imgBox = document.querySelector('.img-box');
+            
+            imgBox.innerHTML = ` <img src="${data.이미지경로}" alt="트레이너 사진">`
             txtBox.innerHTML = `<h3>${data.이름}</h3>
                                 <p>나우휘트니스 ${data.지점} <br>
                                 ${data.직위}</p>

@@ -9,7 +9,7 @@ function makeNav(){
                             <img src="../common/img/logo.png" alt="now fitness logo" class="logo">
                         </a>
                         <ul class="menu">
-                            <li><a href="../center/?봉선점" target="_self">지점안내</a></li>
+                            <li><a href="../center/" target="_self">지점안내</a></li>
                             <li><a href="../trainer/" target="_self">강사소개</a></li>
                             <li><a href="../program/" target="_self">프로그램</a>
                                 <ul>

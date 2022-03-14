@@ -6,8 +6,8 @@ window.addEventListener('load', (e) => {
 
 
 function makeCenterList(){
+    var listBox = document.querySelector('.center-list');
     지점명목록.forEach(지점명=>{
-        var listBox = document.querySelector('.center-list');
         listBox.innerHTML += `<li ${지점명==선택한지점명 ? 'class="active"': ''}>${지점명}</li>`;
     });
 }

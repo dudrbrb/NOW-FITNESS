@@ -91,3 +91,15 @@ header h1{
     color: #fefefe;
     letter-spacing: 0.2rem;
 }
+
+/* 컨텐츠 부분 */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    position: relative;
+}

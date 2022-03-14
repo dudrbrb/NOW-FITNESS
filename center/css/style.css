@@ -1,14 +1,6 @@
+/* 상단 배경 */
 header{
     background-image: url('../img/bg.jpg');
-}
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section{
-    position: relative;
 }
 
 /* 지점선택 */
@@ -21,7 +13,7 @@ section{
 }
 .now-center{
     font-family:'KoPubDotumBold'; 
-    font-size: 26px;
+    font-size: 30px;
 }
 .center-list{
     display: flex;
@@ -31,14 +23,16 @@ section{
 }
 .center-list li{
     border: 1px solid #b1b1b1;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 30px;
     margin: 0 10px;
     cursor: pointer;
+    font-size: 18px;
+    color: #616161;
 }
 .center-list li.active{
-    background-color: #ffc000;
-    border-color: #ffc000;
+    background-color: #ffac13;
+    border-color: #ffac13;
     color: #fefefe;
 }
 
@@ -48,6 +42,7 @@ section{
     width: 98%;
     max-width: 1000px;
     overflow: hidden;
+    margin-bottom: 200px;
 }
 .swiper {
     width: 100%;

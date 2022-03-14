@@ -1,3 +1,102 @@
+/* 상단 배경 */
 header{
     background-image: url('../img/bg.jpg');
+}
+
+/* 지점선택 */
+.select-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.now-center{
+    font-family:'KoPubDotumBold'; 
+    font-size: 30px;
+}
+.center-list{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+.center-list li{
+    border: 1px solid #b1b1b1;
+    padding: 5px 15px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #616161;
+}
+.center-list li.active{
+    background-color: #ffac13;
+    border-color: #ffac13;
+    color: #fefefe;
+}
+
+/* 트레이너 이미지 */
+.trainer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    max-width: 1100px;
+    margin-bottom: 200px;
+}
+.trainer-box{
+    width: 300px;
+    height: 450px;
+    margin: 10px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.trainer-box:hover .info{
+    transform: translateY(0);
+}
+.info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+.info h4{
+    color: #fefefe;
+    font-size: 21px;
+    font-weight: 600;
+}
+.info p{
+    color: #fefefe;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+}
+.info div{
+    background-color: #fefefe;
+    width: 20px;
+    height: 2px;
+    margin: 20px 0;
+}
+.info button{
+    background: none;
+    border: 1px solid #fefefe;
+    color: #fefefe;
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.info button:hover{
+    border: 1px solid #ffe400;
+    color: #ffe400;
 }

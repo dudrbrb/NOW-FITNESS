@@ -5,7 +5,7 @@ window.addEventListener('load', (e) => {
 function makeNav(){
     var navBar = document.querySelector('nav');
 
-    navBar.innerHTML = `<img src="../../common/img/logo.png" alt="now fitness logo" class="logo">
+    navBar.innerHTML = `<img src="../common/img/logo.png" alt="now fitness logo" class="logo">
                         <ul class="menu">
                             <li>지점안내</li>
                             <li>강사소개</li>

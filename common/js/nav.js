@@ -13,7 +13,7 @@ function makeNav(){
                             <li><a href="../trainer/" target="_self">강사소개</a></li>
                             <li><a href="../program/" target="_self">프로그램</a>
                                 <ul>
-                                    <li><a href="../program/?pt" target="_self">P.T</a></li>
+                                    <li><a href="../program/" target="_self">P.T</a></li>
                                     <li><a href="../program/?pl" target="_self">필라테스</a></li>
                                 </ul>
                             </li>

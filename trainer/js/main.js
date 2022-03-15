@@ -67,6 +67,7 @@ function openPopup(){
     [].forEach.call(btns, function(e){ 
         e.addEventListener("click", function(){
             var 선택트레이너 = 트레이너[선택한지점명][e.getAttribute('data-num')]
+            var 경력 = 선택트레이너.경력;
             var txtBox = document.querySelector('.txt-box');
             var imgBox = document.querySelector('.img-box');
             
@@ -74,10 +75,13 @@ function openPopup(){
             txtBox.innerHTML = `<h3>${선택트레이너.이름}</h3>
                                 <p>나우휘트니스 ${선택트레이너.지점} <br>
                                 ${선택트레이너.직위}</p>
-                                <ul>
-                                </ul>`
+                                <ul class="career-box"></ul>`;
 
-            popup('block')
+
+            경력.forEach(e=>{
+                document.querySelector('.career-box').innerHTML += `<li>${e}</li>`
+            });
+            popup('block');
         }, false); 
     });
 }

@@ -3,5 +3,73 @@ header{
 }
 main{
     flex-direction: row;
-    margin-bottom: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 auto 200px;
+    width: 98%;
+    max-width: 850px;
+}
+
+section h2{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+    border-bottom: 2px solid #ffac13;
+    margin-bottom: 40px;
+}
+section span{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+}
+section p{
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+section a{
+    font-size: 15px;
+}
+
+/* 정보 */
+.location-info{
+    width: 300px;
+}
+
+/* 지점선택 */
+
+
+.select-center {
+    margin-bottom: 70px;
+}
+
+.center-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-top: 30px;
+}
+.center-list li{
+    border: 1px solid #b1b1b1;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #616161;
+}
+.center-list li+li{
+    margin-left: 20px;
+}
+.center-list li.active{
+    background-color: #ffac13;
+    border-color: #ffac13;
+    color: #fefefe;
+}
+
+#googleMap{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

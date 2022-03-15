@@ -27,16 +27,14 @@ function openPopup(){
 
     [].forEach.call(btns, function(e){ 
         e.addEventListener("click", function(){
-            var 선택트레이너 = 트레이너[선택한지점명][e.getAttribute('data-num')]
-            var 경력 = 선택트레이너.경력;
             var txtBox = document.querySelector('.popup .txt-box');
             var imgBox = document.querySelector('.popup .img-box');
             
-            imgBox.innerHTML = ` <img src="${선택트레이너.이미지경로}" alt="트레이너 사진">`
-            txtBox.innerHTML = `<h3>${선택트레이너.이름}</h3>
-                                <p>나우휘트니스 ${선택트레이너.지점} <br>
-                                ${선택트레이너.직위}</p>
-                                <ul class="career-box"></ul>`;
+            // imgBox.innerHTML = ` <img src="${선택트레이너.이미지경로}">`
+            // txtBox.innerHTML = `<h3>${선택트레이너.이름}</h3>
+            //                     <p>나우휘트니스 ${선택트레이너.지점} <br>
+            //                     ${선택트레이너.직위}</p>
+            //                     <ul class="career-box"></ul>`;
 
             popup('block');
         }, false); 

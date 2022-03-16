@@ -6,7 +6,7 @@ window.addEventListener('load', (e) => {
 
 function makeNotice(){
     var listBox = document.querySelector('.notice-list');
-    공지사항목록.forEach(e=>{
+    공지사항목록.forEach((e, i)=>{
         listBox.innerHTML += `<div class="notice">
                                 <div class="img-box">
                                     <img src="${e.이미지}" >
@@ -15,7 +15,7 @@ function makeNotice(){
                                     <h3 class="notice-title">${e.제목}</h3>
                                     <p>${e.내용}</p>
                                     <span>${e.날짜}</span>
-                                    <button class="detail-btn">자세히보기</button>
+                                    <button class="detail-btn" data-num="${i}">자세히보기</button>
                                 </div>
                             </div>`;
         
@@ -29,12 +29,12 @@ function openPopup(){
         e.addEventListener("click", function(){
             var txtBox = document.querySelector('.popup .txt-box');
             var imgBox = document.querySelector('.popup .img-box');
-            
-            // imgBox.innerHTML = ` <img src="${선택트레이너.이미지경로}">`
-            // txtBox.innerHTML = `<h3>${선택트레이너.이름}</h3>
-            //                     <p>나우휘트니스 ${선택트레이너.지점} <br>
-            //                     ${선택트레이너.직위}</p>
-            //                     <ul class="career-box"></ul>`;
+            var 선택공지 = 공지사항목록[e.getAttribute('data-num')];
+
+            imgBox.innerHTML = `<img src="${선택공지.이미지}">`
+            txtBox.innerHTML = `<h3 class="notice-title">${선택공지.제목}</h3>
+                                <p>${선택공지.내용}</p>
+                                <span>${선택공지.날짜}</span>`;
 
             popup('block');
         }, false); 

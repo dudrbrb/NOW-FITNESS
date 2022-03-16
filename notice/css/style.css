@@ -72,7 +72,7 @@ section{
     background-color: #0000008e;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
 }
 .popup{
     background-color: #fefefe;
@@ -116,6 +116,10 @@ section{
 .popup .txt-box h3{
     border-bottom: 2px solid #ffd65a;
     margin-bottom: 20px;
+}
+.popup .txt-box p{
+    max-height: 220px;
+    overflow-y: scroll;
 }
 .popup .txt-box span{
     margin-top: 30px;

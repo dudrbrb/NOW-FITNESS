@@ -35,6 +35,7 @@ nav{
     height: 80px;
     padding: 15px 50px;
     top: 0;
+    z-index: 9999;
 }
 nav img{
     width: 140px;

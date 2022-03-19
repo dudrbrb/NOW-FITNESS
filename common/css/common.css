@@ -23,6 +23,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    cursor: default;
 }
 
 /* 상단 메뉴 */
@@ -39,6 +40,7 @@ nav{
 }
 nav img{
     width: 140px;
+    cursor: pointer;
 }
 nav ul li,
 nav ul li a{
@@ -73,6 +75,35 @@ nav > ul > li:hover >ul{
     display: block;
 }
 
+nav button{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+nav button div{
+    background-color: #fefefe;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+nav button div:nth-child(2){
+    margin: 7px 0;
+}
+nav #NavClose{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
 /* 상세페이지 상단 */
 header{
     width: 100%;
@@ -103,4 +134,83 @@ main{
 
 section{
     position: relative;
+}
+
+
+@media screen and (max-width: 1024px){
+    nav #NavOpen,
+    nav #NavClose{
+        display: block;
+    }
+    nav #NavClose{
+        width: 30px;
+        position: fixed;
+        top: 30px;
+        right: 80px;
+    }
+    nav #NavClose img{
+        width: 100%;
+    }
+    nav > ul{
+        background-color: #282828;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: all 0.4s;
+    }
+    nav > ul > li{
+        margin-left: 0;
+        width: 100px;
+        text-align: center;
+    }
+
+    nav > ul > li > ul{
+        position: relative;
+        display: block;
+        margin-left: 25px;
+    }
+    nav > ul > li > ul > li{
+        text-align: left;
+        width: 80px;
+    }
+    nav > ul > li > ul > li a{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    nav > ul > li > ul > li > a:before{
+        content: '- ';
+
+    }
+    nav > ul > li > a,
+    nav > ul > li > ul > li > a{
+        width: 100%;
+    }
+    nav img{
+        width: 110px;
+    }
+}
+
+@media screen and (max-width:768px){
+    nav{
+        padding: 15px 30px;
+    }
+    nav #NavClose{
+        right: 50px;
+    }
+    header{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 540px){
+    nav{
+        padding: 15px 20px;
+    }
+    nav img{
+        width: 90px;
+    }
 }

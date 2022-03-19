@@ -107,6 +107,7 @@ section{
 }
 .detail-top .close img{
     width: 20px;
+    cursor: pointer;
 }
 .popup .img-box{
     width: 100%;

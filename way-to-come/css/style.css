@@ -97,7 +97,7 @@ section a{
         flex-direction: column-reverse;
     }
     section{
-        width: 80%;
+        width: 90%;
     }
     .location-info, #googleMap{
         width: 100%;

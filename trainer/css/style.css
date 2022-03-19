@@ -58,6 +58,9 @@ main{
     align-items: center;
     position: relative;
 }
+.trainer-box img{
+    height: 100%;
+}
 .trainer-box:hover .info{
     transform: translateY(0);
 }
@@ -177,3 +180,28 @@ main{
 .txt-box ul li::before{
     content: '- ';
 }
+
+
+@media screen and (max-width: 1060px){
+    .trainer-box {
+        width: 250px;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 910px){
+    .trainer-box {
+        width: 220px;
+        height: 320px;
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .trainer-box {
+        width: 150px;
+        height: 240px;
+        margin: 4px;
+    }
+    
+}
+

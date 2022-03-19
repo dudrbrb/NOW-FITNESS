@@ -38,11 +38,18 @@ header{
 
 
 /* swiper */
+section:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 200px;
+}
 .swiper-container{
-    width: 98%;
+    width: 85%;
     max-width: 1000px;
     overflow: hidden;
-    margin-bottom: 200px;
 }
 .swiper {
     width: 100%;
@@ -103,12 +110,36 @@ header{
 }
 
 .swiper-button-next{
-    margin-top: -120px;
-    right: -50px;
     background-image: url('../img/next.png');
+    position: relative;
 }
 .swiper-button-prev{
-    margin-top: -120px;
-    left: -50px;
     background-image: url('../img/prev.png');
+    position: relative;
+}
+
+
+@media screen and (max-width: 1024px){
+    .swiper-slide{
+        height: 450px;
+    }
+    .mySwiper .swiper-slide{
+        height: 120px;
+    }
+}
+@media screen and (max-width: 768px){
+    .swiper-slide{
+        height: 350px;
+    }
+    .mySwiper .swiper-slide{
+        height: 80px;
+    }
+}
+@media screen and (max-width: 540px){
+    .swiper-slide{
+        height: 200px;
+    }
+    .mySwiper .swiper-slide{
+        height: 50px;
+    }
 }

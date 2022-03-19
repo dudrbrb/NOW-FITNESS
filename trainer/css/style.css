@@ -76,6 +76,7 @@ main{
     transform: translateY(100%);
 }
 .info h4{
+    font-family:'KoPubDotumBold'; 
     color: #fefefe;
     font-size: 21px;
     font-weight: 600;

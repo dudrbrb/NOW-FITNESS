@@ -204,6 +204,13 @@ main{
         height: 240px;
         margin: 4px;
     }
-    
+    .trainer-detail{
+        flex-direction: column;
+    }
+    .img-box,
+    .txt-box{
+        margin-left: 0;
+        width: 65%;
+    }
 }
 

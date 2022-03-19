@@ -128,11 +128,18 @@ section:last-child{
     }
 }
 @media screen and (max-width: 768px){
+    .swiper-container{
+        width: 95%;
+    }
     .swiper-slide{
         height: 350px;
     }
     .mySwiper .swiper-slide{
         height: 80px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
     }
 }
 @media screen and (max-width: 540px){

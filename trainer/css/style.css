@@ -199,6 +199,9 @@ main{
     
 }
 @media screen and (max-width: 600px){
+    .popup{
+        padding: 20px;
+    }
     .trainer-box {
         width: 150px;
         height: 240px;

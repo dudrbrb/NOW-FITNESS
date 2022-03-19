@@ -31,6 +31,7 @@ function clickCenter(){
 
 function makeSwipe(){
     document.querySelector('.now-center').innerHTML = 선택한지점명;
+    document.querySelector('.now-address').innerHTML = 지점주소[선택한지점명];
 
     var imgList = 이미지목록[선택한지점명]
     if(imgList == undefined) imgList = 이미지목록.오픈예정

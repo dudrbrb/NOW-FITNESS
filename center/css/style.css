@@ -15,6 +15,10 @@ header{
     font-family:'KoPubDotumBold'; 
     font-size: 30px;
 }
+.now-address{
+    font-size: 18px;
+    margin-top: 15px;
+}
 .center-list{
     display: flex;
     justify-content: center;

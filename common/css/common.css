@@ -213,4 +213,7 @@ section{
     nav img{
         width: 90px;
     }
+    nav #NavClose{
+        right: 30px;
+    }
 }

@@ -1,4 +1,5 @@
 window.addEventListener('load', (e) => {
+    showUp('.show-up');
     makeCenterList();
     clickCenter();
     makeSwipe();
@@ -23,7 +24,7 @@ function clickCenter(){
             e.classList.add('active')
             wrapper.forEach(e => e.innerHTML = '')
             선택한지점명 = e.innerHTML;
-            makeSwipe()
+            makeSwipe();
         }, false); 
     });
 }
@@ -35,11 +36,11 @@ function makeSwipe(){
     if(imgList == undefined) imgList = 이미지목록.오픈예정
     imgList.forEach(e => {
         wrapper[0].innerHTML += `<div class="swiper-slide">
-                                <img src="${e}" />
-                            </div>`
+                                    <img src="${e}" />
+                                </div>`;
         wrapper[1].innerHTML += `<div class="swiper-slide">
-                                <img src="${e}" />
-                            </div>`
+                                    <img src="${e}" />
+                                </div>`;
     });
 
     setTimeout(() => {

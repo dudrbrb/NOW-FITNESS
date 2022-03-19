@@ -1,4 +1,5 @@
 window.addEventListener('load', (e) => {
+    showUp('.show-up');
     makeNotice();
     openPopup();
     closePopup();
@@ -7,7 +8,7 @@ window.addEventListener('load', (e) => {
 function makeNotice(){
     var listBox = document.querySelector('.notice-list');
     공지사항목록.forEach((e, i)=>{
-        listBox.innerHTML += `<div class="notice">
+        listBox.innerHTML += `<div class="notice show-up">
                                 <div class="img-box">
                                     <img src="${e.이미지}" >
                                 </div>
@@ -19,7 +20,11 @@ function makeNotice(){
                                 </div>
                             </div>`;
         
-    })
+    });
+
+    setTimeout(() => {
+        showUp('.show-up');
+    }, 200);
 }
 
 function openPopup(){

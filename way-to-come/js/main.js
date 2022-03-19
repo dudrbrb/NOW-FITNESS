@@ -1,4 +1,5 @@
 window.addEventListener('load', (e) => {
+    showUp('.show-up');
     myMap();
     makeCenterList();
     clickCenter();

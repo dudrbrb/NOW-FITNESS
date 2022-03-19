@@ -146,6 +146,7 @@ main{
 }
 .detail-top .close img{
     width: 20px;
+    cursor: pointer;
 }
 .trainer-detail{
     display: flex;

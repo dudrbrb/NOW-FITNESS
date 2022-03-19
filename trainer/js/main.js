@@ -45,7 +45,7 @@ function makeTrainer(){
                             </div>`;
     }else{
         trainer.forEach( (트레이너, 순서) =>{
-            wrapper.innerHTML += `<div class="trainer-box">
+            wrapper.innerHTML += `<div class="trainer-box show-up">
                                     <img src="${트레이너.이미지경로}" alt="트레이너 이미지" />
                                     <div class="info">
                                         <h4>${트레이너.이름}</h4>
@@ -58,6 +58,10 @@ function makeTrainer(){
                                     </div>
                                 </div>`;
         });
+
+        setTimeout(() => {
+            showUp('.show-up');
+        }, 200);
     }
 }
 

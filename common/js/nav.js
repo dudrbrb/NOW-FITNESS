@@ -44,3 +44,26 @@ function mobileMenu() {
         mobileNav.style.transform = 'translateY(-100%)';
     })
 }
+
+
+// 모션
+function showUp(t){
+    var target = document.querySelectorAll(t);
+    
+    target.forEach((e, i) => {
+        setTimeout(() => {
+            e.style.opacity = 1;
+            e.style.transform = 'translateY(0)'
+        }, 300*i);
+    })
+}
+
+function leftClip(t){
+    var target = document.querySelectorAll(t);
+    
+    target.forEach((e, i) => {
+        setTimeout(() => {
+            e.style.clip = "rect(0px, 1000px, 200px, 0px)"
+        }, 300*i);
+    })
+}

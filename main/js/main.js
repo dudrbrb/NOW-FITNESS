@@ -1,3 +1,11 @@
+window.addEventListener('load', (e) => {
+    showUp('.show-up');
+    setTimeout(() => {
+        leftClip('.from-left-clip')
+    }, 600);
+});
+
+
 var swiper = new Swiper('.swiper', {
     effect: 'fade',
     loop: true,
@@ -8,3 +16,4 @@ var swiper = new Swiper('.swiper', {
         delay: 1500,
     },
 });
+

@@ -217,3 +217,18 @@ section{
         right: 30px;
     }
 }
+
+
+
+/* motion */
+.show-up{
+    transition: all 0.4s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.from-left-clip{
+    transition: all 0.8s;
+    clip: rect(0px, 0px, 200px, 0px);
+    overflow: hidden;
+    position: absolute;
+}

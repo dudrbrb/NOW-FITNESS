@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
 }
 header p{
@@ -101,28 +101,31 @@ section.pl .icon-box p{
     background-color: #565656;
 }
 
-
-@media screen and (max-width: 1024px){
-    .swiper-slide{
-        height: 450px;
-    }
-    .mySwiper .swiper-slide{
-        height: 120px;
-    }
-}
-@media screen and (max-width: 768px){
-    .swiper-slide{
-        height: 350px;
-    }
-    .mySwiper .swiper-slide{
-        height: 80px;
-    }
-}
 @media screen and (max-width: 540px){
-    .swiper-slide{
-        height: 200px;
+
+    header p{
+        width: 32ch;
+        text-align: center;
+        line-height: 26px;
     }
-    .mySwiper .swiper-slide{
-        height: 50px;
+    section h4{
+        width: 23ch;
+        text-align: center;
+        margin: 0 auto;
     }
+    .icon-wrapper{
+        flex-wrap: wrap;
+        height: auto;
+        margin-top: 30px;
+    }
+    .icon-box{
+        margin-top: 20px;
+    }
+    .img-box{
+        margin-bottom: 10px;
+    }
+    .pl .icon-box{
+        width: 40%;
+    }
+
 }

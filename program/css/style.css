@@ -1,5 +1,5 @@
 header{
-    height: 800px;
+    height: 100vh;
     flex-direction: column;
 }
 header p{
@@ -99,4 +99,30 @@ section.pl .icon-box p{
     width: 1px;
     height: 100%;
     background-color: #565656;
+}
+
+
+@media screen and (max-width: 1024px){
+    .swiper-slide{
+        height: 450px;
+    }
+    .mySwiper .swiper-slide{
+        height: 120px;
+    }
+}
+@media screen and (max-width: 768px){
+    .swiper-slide{
+        height: 350px;
+    }
+    .mySwiper .swiper-slide{
+        height: 80px;
+    }
+}
+@media screen and (max-width: 540px){
+    .swiper-slide{
+        height: 200px;
+    }
+    .mySwiper .swiper-slide{
+        height: 50px;
+    }
 }

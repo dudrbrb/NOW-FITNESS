@@ -1,23 +1,23 @@
 window.addEventListener('load', (e) => {
     showUp('.show-up');
-    myMap();
     makeCenterList();
     clickCenter();
+    myMap();
 });
 
 function myMap(){
-    var mapBox = document.getElementById("googleMap");
+    // var mapBox = document.getElementById("Map");
     var infoBox = document.querySelector('.location-info');
 
-    var myLatLng = {lat : 지도위치[선택한지점명].lat, lng : 지도위치[선택한지점명].lng};
-    mapBox.innerHTML = '';
-    var map = new google.maps.Map(mapBox, {
-        center: myLatLng,
-        zoom: 17,
-    });
-    new google.maps.Marker({
-        position: myLatLng, map
-    });
+    // var myLatLng = {lat : 지도위치[선택한지점명].lat, lng : 지도위치[선택한지점명].lng};
+    // mapBox.innerHTML = '';
+    // var map = new google.maps.Map(mapBox, {
+    //     center: myLatLng,
+    //     zoom: 17,
+    // });
+    // new google.maps.Marker({
+    //     position: myLatLng, map
+    // });
     infoBox.innerHTML = `<h2>나우 휘트니스 ${선택한지점명}</h2>
                         <p>${지도위치[선택한지점명].address}</p>
                         <p><a href="tel:${지도위치[선택한지점명].tel}">Tel. ${지도위치[선택한지점명].tel}</a><br>

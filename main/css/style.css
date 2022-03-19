@@ -4,7 +4,8 @@ main{
     background-color: #c4c0a2;
 }
 .title{
-    width: 56%;
+    width: 85%;
+    max-width:1060px;
     min-width: 350px;
     position: fixed;
     top: 50%;
@@ -61,4 +62,20 @@ main{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1024px){
+    .title p{
+        width: 32ch;
+        line-height: 28px;
+    }
+
+}
+@media screen and (max-width: 540px){
+    .title p{
+        font-size: 15px;
+        width: 32ch;
+        line-height: 22px;
+    }
+
 }

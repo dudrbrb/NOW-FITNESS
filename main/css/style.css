@@ -69,6 +69,7 @@ main{
     .title p{
         width: 32ch;
         line-height: 28px;
+        top: 90px;
     }
 
 }
@@ -77,6 +78,7 @@ main{
         font-size: 15px;
         width: 32ch;
         line-height: 22px;
+        top: 20px;
     }
 
 }

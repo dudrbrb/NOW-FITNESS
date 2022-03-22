@@ -11,6 +11,10 @@
     font-family:'KoPubDotumBold'; 
     src:url('../font/KoPubDotumBold.ttf') format('truetype')
 }
+@font-face{ 
+    font-family:'BMDOHYEON'; 
+    src:url('../font/BMDOHYEON_ttf.ttf') format('truetype')
+}
 
 /* common */
 *{
@@ -120,8 +124,9 @@ header{
 header h1{
     font-size: 45px;
     text-align: center;
-    color: #fefefe;
     letter-spacing: 0.2rem;
+    font-family:'BMDOHYEON'; 
+    color: #fefefe;
 }
 
 /* 컨텐츠 부분 */

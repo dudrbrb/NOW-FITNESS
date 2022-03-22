@@ -10,7 +10,7 @@ function makeNotice(){
     공지사항목록.forEach((e, i)=>{
         listBox.innerHTML += `<div class="notice show-up">
                                 <div class="img-box">
-                                    <img src="${e.이미지}" >
+                                    <img src="./img/${e.이미지}.jpg" >
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="notice-title">${e.제목}</h3>
@@ -36,7 +36,7 @@ function openPopup(){
             var imgBox = document.querySelector('.popup .img-box');
             var 선택공지 = 공지사항목록[e.getAttribute('data-num')];
 
-            imgBox.innerHTML = `<img src="${선택공지.이미지}">`
+            imgBox.innerHTML = `<img src="./img/${선택공지.이미지}.jpg">`
             txtBox.innerHTML = `<h3 class="notice-title">${선택공지.제목}</h3>
                                 <p>${선택공지.내용}</p>
                                 <span>${선택공지.날짜}</span>`;

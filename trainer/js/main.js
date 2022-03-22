@@ -46,7 +46,7 @@ function makeTrainer(){
     }else{
         trainer.forEach( (트레이너, 순서) =>{
             wrapper.innerHTML += `<div class="trainer-box show-up">
-                                    <img src="${트레이너.이미지경로}" alt="트레이너 이미지" />
+                                    <img src="./img/${트레이너.이름}.jpg" alt="트레이너 이미지" />
                                     <div class="info">
                                         <h4>${트레이너.이름}</h4>
                                         <div></div>
@@ -75,7 +75,7 @@ function openPopup(){
             var txtBox = document.querySelector('.txt-box');
             var imgBox = document.querySelector('.img-box');
             
-            imgBox.innerHTML = ` <img src="${선택트레이너.이미지경로}" alt="트레이너 사진">`
+            imgBox.innerHTML = ` <img src="./img/${선택트레이너.이름}.jpg" alt="트레이너 사진">`
             txtBox.innerHTML = `<h3>${선택트레이너.이름}</h3>
                                 <p>나우휘트니스 ${선택트레이너.지점} <br>
                                 ${선택트레이너.직위}</p>
